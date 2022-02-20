@@ -24,10 +24,11 @@ app_config = {
     'testing' : TestingConfig()
 }
 
-app_active = os.getenv('FLASK_ENV')
-    #isso a baixo é ignorado, não funciona. para setar modo development só antes da execução
+app_active = os.getenv('FLASK_ENV') # Isso à baixo é ignorado, não funciona. para setar modo development só antes da execução
+
 ''' 
 if app_active is None: 
     app_active = 'development' 
 '''
-    #export FLASK_ENV=development
+    # O certo é dizer qual tipo de env vc quer usar logo anstes de iniciar o código:
+    # export FLASK_ENV=development

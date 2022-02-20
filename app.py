@@ -15,5 +15,4 @@ def create_app(config):
 
     @app.route('/')
     def index():
-        return "oi"
-
+        return "test"
